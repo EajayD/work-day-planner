@@ -19,6 +19,13 @@ $(document).ready(function () {
     // get local storage, test for two time blocks first, loop possible for subsequent hours?
     $("#9 .schedule").val(localStorage.getItem("9"));
     $("#10 .schedule").val(localStorage.getItem("10"));
+    $("#11 .schedule").val(localStorage.getItem("11"));
+    $("#12 .schedule").val(localStorage.getItem("12"));
+    $("#13 .schedule").val(localStorage.getItem("13"));
+    $("#14 .schedule").val(localStorage.getItem("14"));
+    $("#15 .schedule").val(localStorage.getItem("15"));
+    $("#16 .schedule").val(localStorage.getItem("16"));
+    $("#17 .schedule").val(localStorage.getItem("17"));
 
     // $(".time-block").each(function (){
     //     $(".schedule").val(localStorage.getItem("id"))
