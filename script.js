@@ -15,5 +15,16 @@ $(document).ready(function () {
         // local storage set
         localStorage.setItem(hour, schedule);
     })
-}) 
+ 
+    // get local storage, test for two time blocks first, loop possible for subsequent hours?
+    $("#nine .schedule").val(localStorage.getItem("nine"));
+    $("#ten .schedule").val(localStorage.getItem("ten"));
 
+    //get current hour of day, looks like it runs on a 24 clock
+    function timeBlocks() {
+        var currentHour = moment().hour();
+        console.log(currentHour);
+    }
+    
+    timeBlocks();
+})
