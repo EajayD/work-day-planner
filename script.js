@@ -17,19 +17,16 @@ $(document).ready(function () {
     })
  
     // get local storage, test for two time blocks first, loop possible for subsequent hours?
-    $("#9 .schedule").val(localStorage.getItem("9"));
-    $("#10 .schedule").val(localStorage.getItem("10"));
-    $("#11 .schedule").val(localStorage.getItem("11"));
-    $("#12 .schedule").val(localStorage.getItem("12"));
-    $("#13 .schedule").val(localStorage.getItem("13"));
-    $("#14 .schedule").val(localStorage.getItem("14"));
-    $("#15 .schedule").val(localStorage.getItem("15"));
-    $("#16 .schedule").val(localStorage.getItem("16"));
-    $("#17 .schedule").val(localStorage.getItem("17"));
+    //loop found! code is cleaner now
 
-    // $(".time-block").each(function (){
-    //     $(".schedule").val(localStorage.getItem("id"))
-    // })
+    $(".time-block").each(function (){
+        var time = $(this).attr('id');
+        var task = localStorage.getItem(time);
+
+        if (task !== null) {
+            $(this).children(".schedule").val(task);
+        }
+    })
 
     //get current hour of day, looks like it runs on a 24 clock
     function timeBlocks() {
