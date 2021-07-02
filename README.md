@@ -24,7 +24,7 @@ Simply click the deployed link below! Enter your tasks and press save, you shoul
 
 ## Preview
 
-<img src = "screenshot.png" alt = "preview">
+<img src = "Screenshot.png" alt = "preview">
 
 ## Authors
 
